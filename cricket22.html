@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Selected Indian Playing 11 | Powered by Niroar Tech</title>
+<meta name="title" content="YourCricket11 – Your Selected Indian Playing 11 | Powered by Niroar Tech">
+
+<!-- Description -->
+<meta name="description" content="Here's your dream Indian Playing 11! Built with YourCricket11.fun, share your perfect cricket team with friends and fans. Powered by Niroar Tech.">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://yourcricket11.fun/cricket22.html" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourcricket11.fun/cricket22.html">
+<meta property="og:title" content="YourCricket11 – Your Selected Indian Playing 11">
+<meta property="og:description" content="Check out this dream Indian cricket team! Shared from YourCricket11.fun – build and share your Playing XI.">
+<meta property="og:image" content="https://yourcricket11.fun/og-image.png"> <!-- Replace with your team preview image -->
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://yourcricket11.fun/cricket22.html">
+<meta name="twitter:title" content="YourCricket11 – Your Selected Indian Playing 11">
+<meta name="twitter:description" content="Here’s a custom Indian Playing XI created on YourCricket11.fun. Create and share yours now!">
+<meta name="twitter:image" content="https://yourcricket11.fun/og-image.png"> <!-- Same as OG -->
+
+    <script src="https://kit.fontawesome.com/50af089672.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/cricket.png" type="image/x-icon">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+        :root {
+            --odi-primary: #045bb3;
+            --odi-secondary: #ff9900;
+            --odi-accent: #e74c3c;
+            --odi-text: #ffffff;
+            --odi-bg: linear-gradient(135deg, #045bb3 0%, #022d5b 100%);
+            
+            --t20-primary: #1a3e72;
+            --t20-secondary: #ff6600;
+            --t20-accent: #f9a01b;
+            --t20-text: #ffffff;
+            --t20-bg: linear-gradient(135deg, #1a3e72 0%, #0a1a36 100%);
+            
+            --test-primary: #f8f9fa;
+            --test-secondary: #000080;
+            --test-accent: #2f66e6;
+            --test-text: #2c3e50;
+            --test-bg: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            color: white;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Theme Classes */
+        .odi-theme {
+            --primary-color: var(--odi-primary);
+            --secondary-color: var(--odi-secondary);
+            --accent-color: var(--odi-accent);
+            --text-color: var(--odi-text);
+            background: var(--odi-bg);
+        }
+
+        .t20-theme {
+            --primary-color: var(--t20-primary);
+            --secondary-color: var(--t20-secondary);
+            --accent-color: var(--t20-accent);
+            --text-color: var(--t20-text);
+            background: var(--t20-bg);
+        }
+
+        .test-theme {
+            --primary-color: var(--test-primary);
+            --secondary-color: var(--test-secondary);
+            --accent-color: var(--test-accent);
+            --text-color: var(--test-text);
+            background: var(--test-bg);
+            color: var(--test-text);
+        }
+
+        .header {
+            padding: 1.5rem 0;
+            text-align: center;
+            position: relative;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .match-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .match-detail {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .match-detail:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .match-detail i {
+            color: var(--secondary-color);
+        }
+
+        .team-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .test-theme .team-container {
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .odi-theme .team-container {
+            background: #045bb3;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .t20-theme .team-container {
+            background: #1a3e72;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+        .team-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--text-color);
+        }
+
+        .team-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+            border-radius: 3px;
+        }
+
+        .playing-xi {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .bowling-xi {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+        }
+
+        .player-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .test-theme .player-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .player-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .test-theme .player-card:hover {
+            background: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .player-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .player-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
+            margin: 0 auto 1rem;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .player-card:hover .player-image {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .player-name {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+
+        .player-role {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .player-special {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .captain {
+            background-color: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+            border: 1px solid rgba(46, 204, 113, 0.5);
+        }
+
+        .vice-captain {
+            background-color: rgba(52, 152, 219, 0.2);
+            color: #3498db;
+            border: 1px solid rgba(52, 152, 219, 0.5);
+        }
+
+        .wicket-keeper {
+            background-color: rgba(155, 89, 182, 0.2);
+            color: #9b59b6;
+            border: 1px solid rgba(155, 89, 182, 0.5);
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .action-btn {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .share-btn {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .back-btn {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+        }
+
+        .test-theme .back-btn {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0.9;
+        }
+
+        .action-btn i {
+            font-size: 1.1rem;
+        }
+
+        /* Instagram Story Size */
+        .story-container {
+            display: none;
+            width: 1080px;
+            height: 1920px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .story-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .story-title {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .story-subtitle {
+            font-size: 2rem;
+            opacity: 0.9;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .story-team {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        .story-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .story-player {
+            text-align: center;
+            width: 250px;
+        }
+
+        .story-player-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary-color);
+            margin: 0 auto 1rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            background: white;
+        }
+
+        .story-player-name {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .story-player-role {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .story-player-special {
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+
+        .story-footer {
+            text-align: center;
+            font-size: 1.5rem;
+            opacity: 0.8;
+            margin-top: 2rem;
+        }
+
+        .close-story {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 2rem;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .close-story:hover {
+            background: rgba(0, 0, 0, 0.7);
+            transform: rotate(90deg);
+        }
+
+        /* Vertical Player Cards (Instagram-style) */
+        .vertical-cards-container {
+            display: none;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem auto;
+            max-width: 420px;
+        }
+
+        .vertical-player-card {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.2rem;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .test-theme .vertical-player-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .vertical-player-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .vertical-player-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--secondary-color), var(--accent-color));
+        }
+
+        .vertical-player-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
+            margin-right: 1.2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .vertical-player-card:hover .vertical-player-image {
+            transform: scale(1.1);
+        }
+
+        .vertical-player-info {
+            flex: 1;
+        }
+
+        .vertical-player-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+            color: var(--text-color);
+        }
+
+        .vertical-player-role {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.3rem;
+            color: var(--text-color);
+        }
+
+        .vertical-player-special {
+            display: inline-block;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        /* Match Info Enhanced */
+        .match-info-enhanced {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .test-theme .match-info-enhanced {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .match-format {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+
+        .coach-info {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .coach-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            color: var(--text-color);
+        }
+
+        .coach-name {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .opponent-info {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .opponent-flag {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--secondary-color);
+        }
+
+        .opponent-vs {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        /* View Toggle */
+        .view-toggle {
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+
+        .view-btn {
+            padding: 0.6rem 1.5rem;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .test-theme .view-btn {
+            color: var(--text-color);
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .view-btn:first-child {
+            border-radius: 8px 0 0 8px;
+        }
+
+        .view-btn:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+
+        .view-btn.active {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .view-btn:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .test-theme .view-btn:hover:not(.active) {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .playing-xi {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .bowling-xi {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .playing-xi {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .bowling-xi {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .team-title {
+                font-size: 1.5rem;
+            }
+            
+            .player-image {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .player-name {
+                font-size: 1rem;
+            }
+            
+            .story-container {
+                width: 100%;
+                height: 100%;
+                padding: 2rem;
+            }
+            
+            .story-title {
+                font-size: 2.5rem;
+            }
+            
+            .story-subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .story-player {
+                width: 150px;
+            }
+            
+            .story-player-image {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .story-player-name {
+                font-size: 1.3rem;
+            }
+            
+            .story-player-role {
+                font-size: 1rem;
+            }
+            
+            .story-player-special {
+                font-size: 0.9rem;
+            }
+
+            .match-info-enhanced {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .playing-xi, .bowling-xi {
+                grid-template-columns: 1fr;
+            }
+            
+            .match-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .match-detail {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .action-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .vertical-player-card {
+                padding: 1rem;
+            }
+
+            .vertical-player-image {
+                width: 60px;
+                height: 60px;
+                margin-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="odi-theme">
+    <!-- The rest of your HTML content remains exactly the same -->
+    <div class="header">
+        <div class="logo">YourCricket11.in</div>
+        <div class="match-info">
+            <div class="match-detail">
+                <i class="fas fa-trophy"></i>
+                <span id="matchTypeDisplay">ONE-DAY INTERNATIONAL</span>
+            </div>
+            <div class="match-detail">
+                <i class="fas fa-flag"></i>
+                <span id="opponentDisplay">vs SRI LANKA</span>
+            </div>
+            <div class="match-detail">
+                <i class="fas fa-user-tie"></i>
+                <span id="coachDisplay">Coach: RAHUL DRAVID</span>
+            </div>
+            <div class="match-detail">
+                <i class="fas fa-info-circle"></i>
+                <span id="tossDisplay">SRI LANKA WON THE TOSS AND CHOSE TO FIELD</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-container">
+        <h1 class="team-title">MY PLAYING XI</h1>
+        
+        <!-- Enhanced Match Info -->
+        <div class="match-info-enhanced">
+            <div class="match-format" id="matchFormatDisplay">ODI</div>
+            <div class="coach-info">
+                <span class="coach-label">Coach:</span>
+                <span class="coach-name" id="coachNameDisplay">Rahul Dravid</span>
+            </div>
+            <div class="opponent-info">
+                <B>INDIA Vs</B>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg" alt="Opponent Flag" class="opponent-flag" id="opponentFlag">
+                
+            </div>
+        </div>
+        
+        <!-- View Toggle -->
+        <div class="view-toggle">
+            <button class="view-btn active" id="gridViewBtn">Grid View</button>
+            <button class="view-btn" id="verticalViewBtn">Vertical View</button>
+        </div>
+        
+        <!-- Grid View -->
+        <div class="playing-xi" id="playingXiTop">
+            <!-- Top 6 players will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="bowling-xi" id="playingXiBottom">
+            <!-- Bottom 5 players will be inserted here by JavaScript -->
+        </div>
+        
+        <!-- Vertical View -->
+        <div class="vertical-cards-container" id="verticalCardsContainer">
+            <!-- Vertical player cards will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="action-buttons">
+            <button class="action-btn download-btn" id="downloadBtn">
+                <i class="fas fa-download"></i> Download Team
+            </button>
+            <button class="action-btn share-btn" id="shareBtn">
+                <i class="fas fa-share-alt"></i> Share Team
+            </button>
+            <button class="action-btn back-btn" id="backBtn">
+                <i class="fas fa-arrow-left"></i> Build Another Team
+            </button>
+        </div>
+    </div>
+    
+    <div class="story-container" id="storyContainer">
+        <div class="close-story" id="closeStory">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="story-header">
+            <div class="story-title">MY PLAYING XI</div>
+            <div class="story-subtitle" id="storySubtitle">INDIA vs SRI LANKA • ODI</div>
+        </div>
+        
+        <div class="story-team" id="storyTeam">
+            <!-- Story format players will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="story-footer">
+            Created with YourCricket11.in
+        </div>
+    </div>
+
+    <script>
+        // The JavaScript remains exactly the same as in your original code
+        document.addEventListener("DOMContentLoaded", () => {
+            // Get team data from localStorage
+            const teamData = JSON.parse(localStorage.getItem("cricketTeam"));
+            if (!teamData) {
+                alert("No team data found. Please build your team first.");
+                window.location.href = "cricket11.html";
+                return;
+            }
+            
+            // Set theme based on match type
+            document.body.classList.add(`${teamData.matchType.toLowerCase()}-theme`);
+            
+            // Update match info displays
+            document.getElementById("matchTypeDisplay").textContent = 
+                teamData.matchType === "ODI" ? "ONE-DAY INTERNATIONAL" :
+                teamData.matchType === "T20" ? "T20 INTERNATIONAL" : "TEST MATCH";
+                
+            document.getElementById("opponentDisplay").textContent = `vs ${teamData.opponent.toUpperCase()}`;
+            document.getElementById("coachDisplay").textContent = `Coach: ${teamData.coach.toUpperCase()}`;
+            document.getElementById("tossDisplay").textContent = 
+                `${teamData.opponent.toUpperCase()} WON THE TOSS AND CHOSE TO ${teamData.tossDecision || "FIELD"}`;
+            
+            // Update enhanced match info
+            document.getElementById("matchFormatDisplay").textContent = teamData.matchType;
+            document.getElementById("coachNameDisplay").textContent = teamData.coach;
+            
+            // Set opponent flag (you would need actual flag images)
+            const opponentFlag = document.getElementById("opponentFlag");
+            // This is a placeholder - you would need actual flag images for each opponent
+            opponentFlag.src = `https://flagcdn.com/w160/${getCountryCode(teamData.opponent)}.png`;
+            opponentFlag.alt = `${teamData.opponent} Flag`;
+            
+            // Update story subtitle
+            document.getElementById("storySubtitle").textContent = 
+                `INDIA vs ${teamData.opponent.toUpperCase()} • ${teamData.matchType}`;
+            
+            // Populate team display
+            const playingXiTop = document.getElementById("playingXiTop");
+            const playingXiBottom = document.getElementById("playingXiBottom");
+            const verticalCardsContainer = document.getElementById("verticalCardsContainer");
+            const storyTeam = document.getElementById("storyTeam");
+            
+            // Create player cards for all views
+            teamData.players.forEach((player, index) => {
+                // Grid view
+                const playerCard = createPlayerCard(player, teamData);
+                if (index < 6) {
+                    playingXiTop.appendChild(playerCard);
+                } else {
+                    playingXiBottom.appendChild(playerCard);
+                }
+                
+                // Vertical view
+                const verticalCard = createVerticalPlayerCard(player, teamData);
+                verticalCardsContainer.appendChild(verticalCard);
+                
+                // Story view
+                const storyPlayer = createStoryPlayer(player, teamData);
+                if (index < 3 || (index >= 6 && index < 9)) {
+                    // First row or third row
+                    let storyRow = document.querySelector(".story-row:last-child");
+                    if (!storyRow || storyRow.children.length >= 3) {
+                        storyRow = document.createElement("div");
+                        storyRow.className = "story-row";
+                        storyTeam.appendChild(storyRow);
+                    }
+                    storyRow.appendChild(storyPlayer);
+                } else {
+                    // Second row or fourth row
+                    let storyRow = document.querySelector(".story-row:last-child");
+                    if (!storyRow || storyRow.children.length >= 3) {
+                        storyRow = document.createElement("div");
+                        storyRow.className = "story-row";
+                        storyTeam.appendChild(storyRow);
+                    }
+                    storyRow.appendChild(storyPlayer);
+                }
+            });
+            
+            // View toggle functionality
+            document.getElementById("gridViewBtn").addEventListener("click", () => {
+                document.getElementById("gridViewBtn").classList.add("active");
+                document.getElementById("verticalViewBtn").classList.remove("active");
+                document.getElementById("playingXiTop").style.display = "grid";
+                document.getElementById("playingXiBottom").style.display = "grid";
+                document.getElementById("verticalCardsContainer").style.display = "none";
+            });
+            
+            document.getElementById("verticalViewBtn").addEventListener("click", () => {
+                document.getElementById("verticalViewBtn").classList.add("active");
+                document.getElementById("gridViewBtn").classList.remove("active");
+                document.getElementById("playingXiTop").style.display = "none";
+                document.getElementById("playingXiBottom").style.display = "none";
+                document.getElementById("verticalCardsContainer").style.display = "flex";
+            });
+            
+            // Create player card element for grid view
+            function createPlayerCard(player, teamData) {
+                const card = document.createElement("div");
+                card.className = "player-card";
+                
+                const img = document.createElement("img");
+                img.src = player.image;
+                img.alt = player.name;
+                img.className = "player-image";
+                
+                const name = document.createElement("div");
+                name.className = "player-name";
+                name.textContent = player.name;
+                
+                const role = document.createElement("div");
+                role.className = "player-role";
+                role.textContent = player.role.split("|")[0].trim();
+                
+                card.appendChild(img);
+                card.appendChild(name);
+                card.appendChild(role);
+                
+                // Add special badges
+                if (player.name === teamData.captain) {
+                    const badge = document.createElement("div");
+                    badge.className = "player-special captain";
+                    badge.textContent = "CAPTAIN (C)";
+                    card.appendChild(badge);
+                }
+                
+                if (player.name === teamData.viceCaptain) {
+                    const badge = document.createElement("div");
+                    badge.className = "player-special vice-captain";
+                    badge.textContent = "VICE CAPTAIN (VC)";
+                    card.appendChild(badge);
+                }
+                
+                if (player.role.includes("Wicket Keeper")) {
+                    const badge = document.createElement("div");
+                    badge.className = "player-special wicket-keeper";
+                    badge.textContent = "WICKET KEEPER";
+                    card.appendChild(badge);
+                }
+                
+                return card;
+            }
+            
+            // Create vertical player card element
+            function createVerticalPlayerCard(player, teamData) {
+                const card = document.createElement("div");
+                card.className = "vertical-player-card";
+                
+                const img = document.createElement("img");
+                img.src = player.image;
+                img.alt = player.name;
+                img.className = "vertical-player-image";
+                
+                const infoDiv = document.createElement("div");
+                infoDiv.className = "vertical-player-info";
+                
+                const name = document.createElement("div");
+                name.className = "vertical-player-name";
+                name.textContent = player.name;
+                
+                const role = document.createElement("div");
+                role.className = "vertical-player-role";
+                role.textContent = player.role.split("|")[0].trim();
+                
+                infoDiv.appendChild(name);
+                infoDiv.appendChild(role);
+                
+                // Add special badges
+                if (player.name === teamData.captain || player.name === teamData.viceCaptain || player.role.includes("Wicket Keeper")) {
+                    const badgesDiv = document.createElement("div");
+                    
+                    if (player.name === teamData.captain) {
+                        const badge = document.createElement("span");
+                        badge.className = "vertical-player-special captain";
+                        badge.textContent = "C";
+                        badgesDiv.appendChild(badge);
+                    }
+                    
+                    if (player.name === teamData.viceCaptain) {
+                        const badge = document.createElement("span");
+                        badge.className = "vertical-player-special vice-captain";
+                        badge.textContent = "VC";
+                        badgesDiv.appendChild(badge);
+                    }
+                    
+                    if (player.role.includes("Wicket Keeper")) {
+                        const badge = document.createElement("span");
+                        badge.className = "vertical-player-special wicket-keeper";
+                        badge.textContent = "WK";
+                        badgesDiv.appendChild(badge);
+                    }
+                    
+                    infoDiv.appendChild(badgesDiv);
+                }
+                
+                card.appendChild(img);
+                card.appendChild(infoDiv);
+                
+                return card;
+            }
+            
+            // Create story player element
+            function createStoryPlayer(player, teamData) {
+                const playerDiv = document.createElement("div");
+                playerDiv.className = "story-player";
+                
+                const img = document.createElement("img");
+                img.src = player.image;
+                img.alt = player.name;
+                img.className = "story-player-image";
+                
+                const name = document.createElement("div");
+                name.className = "story-player-name";
+                name.textContent = player.name;
+                
+                const role = document.createElement("div");
+                role.className = "story-player-role";
+                role.textContent = player.role.split("|")[0].trim();
+                
+                playerDiv.appendChild(img);
+                playerDiv.appendChild(name);
+                playerDiv.appendChild(role);
+                
+                // Add special badges
+                if (player.name === teamData.captain) {
+                    const badge = document.createElement("div");
+                    badge.className = "story-player-special captain";
+                    badge.textContent = "CAPTAIN (C)";
+                    playerDiv.appendChild(badge);
+                }
+                
+                if (player.name === teamData.viceCaptain) {
+                    const badge = document.createElement("div");
+                    badge.className = "story-player-special vice-captain";
+                    badge.textContent = "VICE CAPTAIN (VC)";
+                    playerDiv.appendChild(badge);
+                }
+                
+                if (player.role.includes("Wicket Keeper")) {
+                    const badge = document.createElement("div");
+                    badge.className = "story-player-special wicket-keeper";
+                    badge.textContent = "WICKET KEEPER";
+                    playerDiv.appendChild(badge);
+                }
+                
+                return playerDiv;
+            }
+            
+            
+          function getCountryCode(country) {
+                const countryMap = {
+                    "Australia": "au",
+                    "Bangladesh": "bd",
+                    "England": "gb-eng",
+                    "India": "in",
+                    "New Zealand": "nz",
+                    "Pakistan": "pk",
+                    "South Africa": "za",
+                    "Sri Lanka": "lk",
+                    "West Indies": "jm", // Jamaica as placeholder for WI
+                    "Zimbabwe": "zw",
+
+                    "Nepal": "np",
+       "Netherlands": "nl",
+        "Scotland": "gb-sct", // Scotland flag
+        "UAE": "ae",
+        "USA": "us"
+                };
+                return countryMap[country] || "in";
+            }
+            
+     
+            // Download team as image
+            document.getElementById("downloadBtn").addEventListener("click", () => {
+                const activeView = document.getElementById("verticalViewBtn").classList.contains("active") ? 
+                    document.getElementById("verticalCardsContainer") : 
+                    document.querySelector(".team-container");
+                
+                html2canvas(activeView, {
+                    backgroundColor: null,
+                    scale: 2,
+                    logging: false,
+                    allowTaint: true,
+                    useCORS: true
+                }).then(canvas => {
+                    const link = document.createElement("a");
+                    link.download = `MyCricketXI_${teamData.matchType}_vs_${teamData.opponent}.png`;
+                    link.href = canvas.toDataURL("image/png");
+                    link.click();
+                });
+            });
+            
+            // Share team
+            document.getElementById("shareBtn").addEventListener("click", async () => {
+                try {
+                    // First show story view for capture
+                    document.getElementById("storyContainer").style.display = "flex";
+                    
+                    // Capture the story view
+                    const canvas = await html2canvas(document.getElementById("storyContainer"), {
+                        backgroundColor: null,
+                        scale: 2,
+                        logging: false,
+                        allowTaint: true,
+                        useCORS: true
+                    });
+                    
+                    // Hide story view after capture
+                    document.getElementById("storyContainer").style.display = "none";
+                    
+                    // Convert canvas to blob
+                    canvas.toBlob(async (blob) => {
+                        const file = new File([blob], 'MyCricketXI.png', { type: 'image/png' });
+                        const shareData = {
+                            title: `My ${teamData.matchType} Cricket Team vs ${teamData.opponent}`,
+                            text: `Check out my cricket team created with YourCricket11.in`,
+                            files: [file]
+                        };
+                        
+                        try {
+                            if (navigator.canShare && navigator.canShare(shareData)) {
+                                await navigator.share(shareData);
+                            } else {
+                                // Fallback for browsers that don't support file sharing
+                                const shareUrl = `https://yourcricket11.in/share?team=${encodeURIComponent(JSON.stringify(teamData))}`;
+                                if (navigator.share) {
+                                    await navigator.share({
+                                        title: shareData.title,
+                                        text: shareData.text,
+                                        url: shareUrl
+                                    });
+                                } else {
+                                    // Final fallback - open new tab with image
+                                    const newTab = window.open();
+                                    newTab.document.write(`
+                                        <!DOCTYPE html>
+                                        <html>
+                                        <head>
+                                            <title>${shareData.title}</title>
+                                            <meta property="og:title" content="${shareData.title}">
+                                            <meta property="og:description" content="${shareData.text}">
+                                            <meta property="og:image" content="${canvas.toDataURL("image/png")}">
+                                            <meta property="og:url" content="${shareUrl}">
+                                            <meta name="twitter:card" content="summary_large_image">
+                                        </head>
+                                        <body style="margin:0;padding:0;text-align:center;">
+                                            <img src="${canvas.toDataURL("image/png")}" alt="My Cricket XI" style="max-width:100%;height:auto;">
+                                            <p>${shareData.text}</p>
+                                            <p><a href="${shareUrl}">Create your own team</a></p>
+                                        </body>
+                                        </html>
+                                    `);
+                                }
+                            }
+                        } catch (err) {
+                            console.error('Error sharing:', err);
+                            // Fallback to download
+                            const link = document.createElement("a");
+                            link.download = `MyCricketXI_${teamData.matchType}_vs_${teamData.opponent}.png`;
+                            link.href = canvas.toDataURL("image/png");
+                            link.click();
+                        }
+                    }, 'image/png');
+                } catch (err) {
+                    console.error('Error capturing team:', err);
+                    alert('Error preparing team for sharing. Please try downloading instead.');
+                }
+            });
+            
+            // Close story view
+            document.getElementById("closeStory").addEventListener("click", () => {
+                document.getElementById("storyContainer").style.display = "none";
+            });
+            
+            // Back button
+            document.getElementById("backBtn").addEventListener("click", () => {
+                window.location.href = "cricket11.html";
+            });
+        });
+    </script>
+</body>
+</html>
